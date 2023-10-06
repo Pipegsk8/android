@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formulario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/introduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:text="Ingrese sus datos"
+                android:textSize="25sp"
+                />
+
+            <EditText
+                android:id="@+id/et_rut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Rut"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Nombre"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:hint="Apellido"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/et_edad"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:hint="Edad"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:inputType="date"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="147dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <RadioButton
+                    android:id="@+id/rb_Estudiante"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="RBestudiante"
+                    android:text="Estudiante" />
+
+                <RadioButton
+                    android:id="@+id/rb_profesor"
+                    android:layout_width="154dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="RBprofesor"
+                    android:text="Profesor" />
+
+            </RadioGroup>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefono"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electronico"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/et_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Direccion"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_confirmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="200dp"
+                android:onClick="ValidarOnClick"
+                android:text="Validar"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

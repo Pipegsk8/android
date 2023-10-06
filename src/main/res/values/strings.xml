@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">evaluacion1</string>
+    <string name="Inicio_sesion">Inicio de sesión</string>
+    <string name="Usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="ingreso">Ingrese su usuario</string>
+
+</resources>
