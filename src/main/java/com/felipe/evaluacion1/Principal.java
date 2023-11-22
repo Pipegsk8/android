@@ -24,4 +24,10 @@ public class Principal extends AppCompatActivity {
         startActivity(rating);
         finish();
     }
+
+    public void sensorOnClick(View v){
+        Intent sensor = new Intent(Principal.this, sensores.class);
+        startActivity(sensor);
+        finish();
+    }
 }

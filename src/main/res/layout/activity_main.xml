@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnCrear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -10,23 +11,21 @@
         android:id="@+id/tv_Inicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Inicio_sesion"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:paddingTop="30dp"
         android:paddingLeft="140dp"
-        />
+        android:paddingTop="30dp"
+        android:text="@string/Inicio_sesion"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tv_Usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_Inicio"
-        android:text="@string/Usuario"
-        android:textSize="20sp"
         android:paddingLeft="30dp"
         android:paddingTop="50dp"
-        />
+        android:text="@string/Usuario"
+        android:textSize="20sp" />
 
 
     <EditText
@@ -34,30 +33,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_Usuario"
-        android:hint="@string/ingreso"
         android:layout_marginHorizontal="30dp"
-        />
+        android:hint="@string/ingreso" />
 
     <TextView
         android:id="@+id/tv_Pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/password"
-        android:textSize="20sp"
         android:layout_below="@id/et_Usuario"
         android:paddingLeft="30dp"
         android:paddingTop="20dp"
-        />
+        android:text="@string/password"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/et_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password"
-        android:inputType="textPassword"
         android:layout_below="@id/tv_Pass"
         android:layout_marginHorizontal="30dp"
-        />
+        android:hint="@string/password"
+        android:inputType="textPassword" />
 
     <LinearLayout
         android:id="@+id/ll_btn"
@@ -74,8 +70,8 @@
             android:layout_below="@id/et_pass"
             android:layout_marginHorizontal="50dp"
             android:layout_marginTop="20dp"
-            android:text="Ingresar"
-            android:onClick="ingresarOnClick"/>
+            android:onClick="ingresarOnClick"
+            android:text="Ingresar" />
 
         <Button
             android:id="@+id/btnRegistrarse"
@@ -111,6 +107,19 @@
         android:text="Sobre mi"
         android:textColor="@android:color/holo_red_light"
         android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_alignBottom="@+id/Importante"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="655dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="-75dp"
+        android:layout_weight="1"
+        android:text="Button" />
 
 
 </RelativeLayout>
