@@ -1,5 +1,6 @@
 package com.felipe.evaluacion1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -11,19 +12,47 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.felipe.evaluacion1.db.dbHelper;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.io.BufferedReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
 
- 
+    FirebaseFirestore firestore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        firestore = FirebaseFirestore.getInstance();
+
+        Map<String, Object> users = new HashMap<>();
+        users.put("Nombre", "Felipe");
+        users.put ("Apellido", "Villalobos");
+        users.put("Correo", "correo1@gmail.com");
+        users.put("password", "1234");
+
+        firestore.collection("users").add(users).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(getApplicationContext(), "Exitoso", Toast.LENGTH_LONG).show();
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(getApplicationContext(), "Fallido", Toast.LENGTH_LONG).show();
+
+            }
+        });
         }
 
     public void ingresarOnClick(View v){

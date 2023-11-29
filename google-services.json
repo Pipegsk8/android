@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831743039397",
+    "project_id": "esta-no-es-una-app",
+    "storage_bucket": "esta-no-es-una-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831743039397:android:5567e42ee7dc491e90fa4c",
+        "android_client_info": {
+          "package_name": "com.felipe.evaluacion1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS_0miB3G8i2DuVeXeuFilfs2sVFwy5Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
